@@ -1,0 +1,54 @@
+/* Base Page Styling */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.spacer {
+    height: 1500px;
+    background: linear-gradient(180deg, #e0e0e0, #b0b0b0);
+    margin: 40px 0;
+    border-radius: 8px;
+}
+
+.scroll-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: #007acc;
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.2s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #005999;
+    transform: scale(1.05);
+}
+
+.scroll-btn.show {
+    opacity: 1;
+    visibility: visible;
+}
